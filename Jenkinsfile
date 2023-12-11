@@ -24,11 +24,11 @@ pipeline {
                         sshPublisherDesc(
                             configName: 'myawsuserver',
                             transfers: [sshTransfer(sourceFiles: '**/*', remoteDirectory: '/home/ubuntu/myapp')],
-                          
+                            
                         )
                     ]
                 )
             }
-        }
+        }
     }
 }
