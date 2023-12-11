@@ -24,7 +24,7 @@ pipeline {
                         sshPublisherDesc(
                             configName: 'myawsuserver',
                             transfers: [sshTransfer(sourceFiles: '**/*', remoteDirectory: '/home/ubuntu/myapp')],
-                            execCommand: 'python /home/ubuntu/python/test.py'
+                          
                         )
                     ]
                 )
